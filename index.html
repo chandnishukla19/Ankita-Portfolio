@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankita Shukla - Professional Portfolio</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #f8f9fa, #e6f0ff, #ffe6eb);
+        color: #333;
+    }
+    header {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    header h1 {
+        margin: 10px 0;
+        font-size: 2.8em;
+        color: #2c3e50;
+    }
+    header h3 {
+        font-weight: normal;
+        color: #555;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #e0e0e0;
+        display: block;
+        margin: 0 auto 15px;
+        object-fit: cover;
+        border: 3px solid #4a90e2;
+    }
+    .upload-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+    section {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 10px;
+    }
+    section h2 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-size: 1.8em;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    ul li {
+        margin-bottom: 10px;
+    }
+    a {
+        color: #4a90e2;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    footer {
+        text-align: center;
+        padding: 15px;
+        color: #555;
+        margin-top: 40px;
+        font-size: 0.9em;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img id="profileImage" class="profile-pic" src="placeholder.png" alt="Your Image">
+    <div class="upload-container">
+        <input type="file" id="imageUpload" accept="image/*">
+    </div>
+    <h1>Ankita Shukla</h1>
+    <h3>Customer Support Specialist | Microsoft 365 Certified</h3>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>Customer Support Specialist with strong SaaS and technical support experience, specializing in ticket management, bug testing, documentation, and KPI reporting. Microsoft 365 Certified with proven ability to troubleshoot, replicate issues, and collaborate across teams in fast-paced environments.</p>
+</section>
+
+<section>
+    <h2>Core Competencies</h2>
+    <ul>
+        <li>SaaS Product Support & Troubleshooting</li>
+        <li>Ticketing Systems (Zendesk, Salesforce, DFM)</li>
+        <li>Remote Collaboration Tools (Zoom, Teams, Slack)</li>
+        <li>Bug Replication & Testing</li>
+        <li>KPI Reporting & Data Analysis</li>
+        <li>Microsoft 365 Admin & Domain Configuration</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Professional Experience</h2>
+    <h3>M365 Business Technical Advisor | Sherweb (Jun 2023 – Jul 2025)</h3>
+    <ul>
+        <li>Managed 50+ weekly helpdesk tickets ensuring accurate details and timely resolution.</li>
+        <li>Expertly resolved Microsoft 365 technical issues, improving user satisfaction.</li>
+        <li>Collaborated with QA/product teams for bug testing and new feature validations.</li>
+    </ul>
+    
+    <h3>Customer Experience Specialist | EGS Contact Center Solutions (May 2021 – Nov 2021)</h3>
+    <ul>
+        <li>Assisted US customers with billing and service queries across chat, email, and calls.</li>
+        <li>Created and updated customer knowledge base content.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Certifications</h2>
+    <ul>
+        <li><a href="https://learn.microsoft.com/en-us/users/ankitashukla-6582/credentials/9fea2e50ee8ce0b0" target="_blank">Microsoft 365 Certified: Teams Administrator Associate (Jul 2024)</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/users/ankitashukla-6582/credentials/99672751ce21d506" target="_blank">Microsoft 365 Certified: Fundamentals (May 2023)</a></li>
+        <li><a href="https://cert.efset.org/en/ZEcXHH" target="_blank">EF SET Certification</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:dzire2fly19@yahoo.com">dzire2fly19@yahoo.com</a><br>
+    Phone: +91 9026585781</p>
+</section>
+
+<footer>
+    &copy; 2025 Ankita Shukla | All Rights Reserved
+</footer>
+
+<script>
+    const imageUpload = document.getElementById('imageUpload');
+    const profileImage = document.getElementById('profileImage');
+    imageUpload.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                profileImage.src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+</body>
+</html>
